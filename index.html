@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__logo">
+      <img src="./images/logo.svg" alt="" />
+    </div>
+    <div class="nav__burger">
+      <img src="./images/icon-menu.svg" alt="" />
+    </div>
+
+    <div class="nav__menu nav__menu--hidden">
+      <div class="nav__menu__close-icon">
+        <img src="./images/icon-close-menu.svg" alt="" />
+      </div>
+      <ul class="list">
+        <li class="list__item list__item--nav">
+          <div class="dropdown">
+            <a class="dropdown__link" href="#">Features</a>
+            <div class="dropdown__menu dropdown__menu--left">
+              <ul class="list">
+                <li class="list__item list__item--dropdown">
+                  <a href="#"
+                    ><span class="list__item__icon"
+                      ><img src="./images/icon-todo.svg" alt="" /></span
+                    >Todo List</a
+                  >
+                </li>
+                <li class="list__item list__item--dropdown">
+                  <a href="#"
+                    ><span class="list__item__icon"
+                      ><img src="./images/icon-calendar.svg" alt="" /></span
+                    >Calendar</a
+                  >
+                </li>
+                <li class="list__item list__item--dropdown">
+                  <a href="#"
+                    ><span class="list__item__icon"
+                      ><img src="./images/icon-reminders.svg" alt="" /></span
+                    >Reminders</a
+                  >
+                </li>
+                <li class="list__item list__item--dropdown">
+                  <a href="#"
+                    ><span class="list__item__icon"
+                      ><img src="./images/icon-planning.svg" alt="" /></span
+                    >Planning</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list__item list__item--nav">
+          <div class="dropdown">
+            <a class="dropdown__link" href="#">Company</a>
+            <div class="dropdown__menu dropdown__menu--right">
+              <ul class="list">
+                <li class="list__item list__item--dropdown">
+                  <a href="#">History</a>
+                </li>
+                <li class="list__item list__item--dropdown">
+                  <a href="#">Our Team</a>
+                </li>
+                <li class="list__item list__item--dropdown">
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list__item list__item--nav"><a href="#">Careers</a></li>
+        <li class="list__item list__item--nav"><a href="#">About</a></li>
+      </ul>
+      <div class="nav__menu__login">
+        <button class="btn">Login</button>
+        <button class="btn btn--outline">Register</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="contentContainer">
+      <div class="left">
+        <div class="text">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location.
+          Streaminline processes, create them rituals, and
+        watch productivity soar.</p>
+        <button class="learnMore">Learn more</button>
+        </div>
+        <div class="clients">
+          <img src="/images/client-databiz.svg" alt="Databiz logo">
+          <img src="/images/client-audiophile.svg" alt="Audiophile logo">
+          <img src="/images/client-meet.svg" alt="Meet logo">
+          <img src="/images/client-maker.svg" alt="Make logo">
+        </div>
+      </div>
+      <div class="right">
+        <img src="/images/image-hero-desktop.png" class="desktopImage" alt="Work from home">
+        <img src="/images/image-hero-mobile.png" class="mobileImage" alt="Work from home">
+      </div>
+    </div>
+  </main>
+  <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more -->
+  
+    <script src="landing.js"></script>
+</body>
+</html>
